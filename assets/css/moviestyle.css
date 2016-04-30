@@ -1,0 +1,419 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.imageview{
+    width: 100%;
+    height: auto;
+}
+.imageview img{
+    width: 100%;
+    /*height: 100%;*/
+    max-height: 1000px;
+}
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.fbpage img{
+
+}
+
+.fbpage {
+    padding: 2px;
+    margin: 5px;
+}
+
+.addbar {
+    padding: 2px;
+    margin: 5px;
+}
+
+.recentmovie {
+    margin: 5px;
+
+}
+
+.recenttext {
+    padding: 2px;
+    background: #5CB85C;
+    font-weight: 200;
+    font-size: 200%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.viewholder {
+    max-height: 1500px;
+    overflow: hidden;
+}
+
+.moviebox {
+    max-width: 50%;
+    max-height: 200px;
+    float: left;
+}
+
+
+
+
+.moviename {
+    float: left;
+    background: #5cb85c;
+    border-radius: 1px;
+    height: auto;
+    width: 100%;
+}
+
+.moviename h1{
+    font-size: 250%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.catname {
+    float: right;
+    margin: 0 auto;
+    font-size: 200%;
+    border-radius: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #3B5998;
+    position: absolute;
+    z-index: 5;
+}
+.catname h5{
+    font-size: 100%;
+    padding: 0 5px 0 5px;
+}
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 5 */
+.btn-5 {
+    background: #5CB85C;
+    color: #fff;
+    height: 70px;
+    min-width: 300px;
+    line-height: 24px;
+    font-size: 16px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.btn-5:active {
+    background: #5CC08A;
+    top: 2px;
+}
+
+.btn-5 span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.btn-5:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-5:active:before {
+    color: #5CC08A;
+}
+
+/* Button 5b */
+.btn-5b:hover span {
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    transform: translateX(200%);
+}
+
+.btn-5b:before {
+    left: -100%;
+    top: 0;
+}
+
+.btn-5b:hover:before {
+    left: 0;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-download:before {
+    content: "\f019";
+}
+.dlbtn{
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dlbtn a{
+    /*margin-left: 30%;*/
+    /*margin: 0 auto;*/
+    /*margin-left: 30%;*/
+}
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 10% auto;
+    /*padding: 5px 20px 13px 20px;*/
+    border-radius: 1px;
+    background: #fff;
+    border: 5px solid #4A515B;
+    /*background: -moz-linear-gradient(#fff, #999);*/
+    /*background: -webkit-linear-gradient(#fff, #999);*/
+    /*background: -o-linear-gradient(#fff, #999);*/
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -20px;
+    text-align: center;
+    top: -20px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+
+
+.primaryfooter{
+    background-color: #22313F;
+    width: 100%;
+    height: 330px;
+}
+.bkborder{
+    border: 1px solid #000;
+}
+
+.addfooter, .contactfooter{
+    margin-top: 50px;
+    height: 300px;
+}
+
+.addfooter h1, .contactfooter h1{
+    font-family: Roboto;
+    font-size: 25px;
+
+}
+
+.addfooter span, .contactfooter span{
+    height: 1px;
+    width: 100px;
+    text-align: left;
+    background-color: #ffffff;
+    display: block;
+    /*margin: auto;*/
+    margin-left: 2px;
+}
+
+.footer-address {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    float: left;
+    text-align: left;
+}
+
+.footer-address ul{
+    list-style: none;
+    /*display: block;*/
+
+}
+.footer-address ul li{
+    width: 100%;
+    border-bottom: 1px solid #4A515B;
+    float: left;
+    margin-left: -40px;
+}
+.footer-address ul li p{
+    font-family: Roboto;
+    font-size: 15px;
+    padding: 2px;
+}
+.contactform{
+    margin-top: 5px;
+}
+.contactform input, textarea{
+    border: 0px solid #e5e5e5;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    color: #a4a4a4;
+    font-size: 15px;
+    background-color: #4a515b;
+}
+
+.secondary-footer{
+    width: 100%;
+    height: 90px;
+    background-color: #336E7B;
+}
+.copyright-text{
+    width: 100%;
+    height: 20px;
+}
+.copyright-text p{
+    color: #a4a4a4;
+    font-size: 15px;
+    font-family: Roboto;
+}
+.copyright-text p span{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Roboto;
+}
+.social-icon{
+    width: 70%;
+    height: 50px;
+}
+.social-icon a{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+.social-icon a i{
+    padding: 10px;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+.break{
+    height: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .moviename {
+        float: left;
+        background: #5cb85c;
+        border-radius: 1px;
+        height: auto;
+        width: 100%;
+    }
+
+    .moviename h1{
+        font-size: 150%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .catname {
+        float: right;
+        margin: 0 auto;
+        font-size: 200%;
+        border-radius: 1px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background: #3B5998;
+        position: absolute;
+        z-index: 5;
+    }
+    .catname h5{
+        font-size: 75%;
+        padding: 0 5px 0 5px;
+    }
+    .break{
+        height: 10px;
+    }
+}
+
+
+

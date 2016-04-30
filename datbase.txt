@@ -1,0 +1,1 @@
+CREATE TABLE `quickonline`.`uploader` ( `upid` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(1000) NOT NULL , `user_name` VARCHAR(100) NOT NULL , `password` VARCHAR(100) NOT NULL , PRIMARY KEY (`upid`)) ENGINE = InnoDB;

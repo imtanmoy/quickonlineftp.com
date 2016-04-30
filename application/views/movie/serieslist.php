@@ -1,0 +1,139 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quickonline.com</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <?php include 'include_top.php' ?>
+
+</head>
+<body
+    style="background: url('<?php echo base_url(); ?>assets/img/back.jpg')repeat-x center center fixed; padding: 0; margin: 0;"
+    class="col-md-12">
+<div class="container-fluid">
+    <?php include 'topbanner.php' ?>
+    <?php include "navigation.php"; ?>
+
+
+    <div class="row">
+        <div class="col-md-12 pagename-container">
+            <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                <div class="pagename">
+                    <?php echo $cname ?>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 30px;;"></div>
+
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+
+
+            <?php
+
+            if ($tv_list != null) {
+                for ($i = 0; $i < count($tv_list); ++$i) {
+                    ?>
+
+
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                            <div class="inneritem">
+                                <img class="zoom_image" width="100%"
+                                     src="<?php echo base_url(); ?>posters/<?php echo $tv_list[$i]->srposter ?>"
+                                     alt="gdgd">
+                                <div class="hovercaption">
+                                    <a class="button" href="<?php echo base_url() . "tv/episodelist/" . $tv_list[$i]->srid ?>">Details</a>
+                                </div>
+                            </div>
+
+                            <div class="nametext">
+                                <h4><?php echo $tv_list[$i]->srname; ?></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php }
+            } ?>
+
+
+            <?php
+
+            if ($tv != null) {
+                for ($i = 0; $i < count($tv); ++$i) { ?>
+
+
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                            <div class="inneritem">
+                                <img class="zoom_image" width="100%"
+                                     src="<?php echo base_url(); ?>posters/<?php echo $tv[$i]->tvposter ?>"
+                                     alt="gdgd">
+                                <div class="hovercaption">
+                                    <a class="button" href="<?php echo base_url() . "tv/seasonlist/" . $tv[$i]->tvid ?>">Details</a>
+                                </div>
+                            </div>
+
+                            <div class="nametext">
+                                <h4><?php echo $tv[$i]->tvname; ?></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php }
+            } ?>
+
+
+            <?php
+
+            if ($episodelist != null) {
+                for ($i = 0; $i < count($episodelist); ++$i) { ?>
+
+
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                            <div class="inneritem">
+                                <img class="zoom_image" width="100%"
+                                     src="<?php echo base_url(); ?>posters/<?php echo $episodelist[$i]->srposter ?>"
+                                     alt="gdgd">
+                                <div class="hovercaption">
+                                    <a class="button" href="<?php echo base_url() . "tv/" . $episodelist[$i]->epid ?>">Details</a>
+                                </div>
+                            </div>
+
+                            <div class="nametext">
+                                <h4><?php echo $episodelist[$i]->name; ?></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php }
+            } ?>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 text-center">
+                <?php echo $pagination; ?>
+            </div>
+        </div>
+
+
+        <?php include 'footer.php' ?>
+    </div>
+
+
+    <?php include 'include_bottom.php' ?>
+
+
+</body>
+</html>

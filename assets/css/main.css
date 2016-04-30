@@ -1,0 +1,220 @@
+
+
+/* ==========================================================================
+   Tanmoy's custom styles
+   ========================================================================== */
+html,body{height:100%; margin: 0; padding: 0;}
+div, nav{display: block;}
+li, ul{
+    list-style-type: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+.wrapper{
+    width: 1920px;
+    height: 1200px;
+    background: url("../img/bg.jpg") repeat-x center center fixed;
+    /*background-color: #cccccc;*/
+    background-size: cover;
+}
+.holder{
+    border: 1px solid #2aabd2;
+    margin: 0 auto;
+}
+.topbanner{
+    height: 130px;
+    width: 100%;
+    margin-bottom: 5px;
+    /*border: 1px solid chartreuse;*/
+}
+.logo{
+    height: 95%;
+    float: left;
+    padding: 5px;
+    width: auto;
+    display: block;
+}
+
+.logo img{
+    max-height:100%;
+    max-width: 100%;
+}
+
+.top-info {
+    display: block;
+    overflow: hidden;
+    color: #fff;
+    padding: 0px 0;
+    margin-right: 5px;
+    font-size: 15px
+}
+.top-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.top-info li {
+    float: none;
+    margin-left: 10px;
+    font-weight: 600
+}
+.top-info i {
+    color: #e74c3c;
+    font-size: 20px;
+    margin-right: 5px
+}
+.top-info li.social-icon i {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 0
+}
+.top-info li.social-icon i:hover {
+    color: #8c1b1e
+}
+
+.title-area {
+    top:85%;
+    z-index: 0;
+    left:0;
+    text-align:center;
+    position:absolute;
+    width:100%;
+    color:#FFFFFF;
+    padding:0;
+    background-color: #000;
+    opacity: .6;
+}
+
+.img-title h4{
+    color: white;
+    z-index: 1;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.marquee-container {
+    height: 300px;
+    width: 100%;
+    border: 5px solid #2b542c;
+}
+.marquee-container a img{
+    position: absolute;
+}
+
+.marquee {
+ overflow: hidden;
+}
+
+.top-info {
+margin: 0 auto;
+}
+
+.recent-content{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+.green-border{
+    border-radius: 2px;
+    border: 1px solid #5CC08A;
+}
+
+.recent-content-header{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #5CC08A;
+    text-align: center;
+}
+.recent-content-header h2{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
+
+.recent-content-container{
+    width: 100%;
+    height: auto;
+}
+.recent-content-container h2{
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.recent-content-container h2 a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.crawler-item {
+    max-width: 250px;
+    min-height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    /*position: relative;*/
+    border: 0px solid #2aabd2;
+    border-radius: 2px;
+    margin: 5px;
+}
+.crawler-item img{
+    min-height: 100%;
+    min-width: 100%;
+    /*vertical-align: middle;*/
+    /*vertical-align: top;*/
+    /*display: inline;*/
+}
+
+.crawler-title {
+    display: block;
+    left:0;
+    width: 100%;
+    height: 30px;;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    text-align:center;
+    font-size: 130%;
+    color:#0f0f0f;
+    padding:0;
+    background-color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .recent-content-header h2{
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+    }
+    .crawler-item{
+        margin: 0px;
+        padding: 0;
+    }
+    .recent-content{
+        border-radius: 0px;
+        border: none;
+    }
+
+    .green-border{
+        border: 0px;
+    }
+
+}
