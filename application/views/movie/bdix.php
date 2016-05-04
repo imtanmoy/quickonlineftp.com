@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php include "navigation.php"; ?>
 <br>
     <div class="row">
-        <div class="col-sm-offset-1 col-sm-10">
+        <div class="col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12">
             <?php for ($i = 0; $i < count($bdix); ++$i) { ?>
             <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                 <div class="bdix wow jello">

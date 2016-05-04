@@ -77,8 +77,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 for ($i = 0; $i < count($tv_list); ++$i) { ?>
 
 
-                    <div class="col-md-4 col-sm-6 col-xs-6">
-                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6" style="overflow: hidden; padding: 2px;">
+                        <div class="itembox wow zoomIn" data-wow-duration="2s">
                             <div class="inneritem">
                                 <img class="zoom_image" width="100%"
                                      src="<?php echo base_url(); ?>posters/<?php echo $tv_list[$i]->poster ?>"

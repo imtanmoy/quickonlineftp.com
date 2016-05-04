@@ -24,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
     <div class="row">
-        <div class="col-md-12 pagename-container">
-            <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+        <div class="col-md-12 col-xs-12 pagename-container">
+            <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xs-12">
                 <div class="pagename">
                     <?php echo $cname ?>
                 </div>
@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div style="width: 100%; height: 30px;;"></div>
 
     <div class="row">
-        <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+        <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xs-12 col-sm-12">
 
 
             <?php
@@ -47,14 +47,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     ?>
 
 
-                    <div class="col-md-4 col-sm-6 col-xs-6">
-                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6" style="overflow: hidden; padding: 2px;">
+                        <div class="itembox wow zoomIn" data-wow-duration="2s">
                             <div class="inneritem">
                                 <img class="zoom_image" width="100%"
                                      src="<?php echo base_url(); ?>posters/<?php echo $tv_list[$i]->srposter ?>"
                                      alt="gdgd">
                                 <div class="hovercaption">
-                                    <a class="button" href="<?php echo base_url() . "tv/episodelist/" . $tv_list[$i]->srid ?>">Details</a>
+                                    <a class="button"
+                                       href="<?php echo base_url() . "tv/episodelist/" . $tv_list[$i]->srid ?>">Details</a>
                                 </div>
                             </div>
 
@@ -74,14 +75,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 for ($i = 0; $i < count($tv); ++$i) { ?>
 
 
-                    <div class="col-md-4 col-sm-6 col-xs-6">
-                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6" style="overflow: hidden; padding: 2px;">
+                        <div class="itembox wow zoomIn" data-wow-duration="2s">
                             <div class="inneritem">
                                 <img class="zoom_image" width="100%"
                                      src="<?php echo base_url(); ?>posters/<?php echo $tv[$i]->tvposter ?>"
                                      alt="gdgd">
                                 <div class="hovercaption">
-                                    <a class="button" href="<?php echo base_url() . "tv/seasonlist/" . $tv[$i]->tvid ?>">Details</a>
+                                    <a class="button"
+                                       href="<?php echo base_url() . "tv/seasonlist/" . $tv[$i]->tvid ?>">Details</a>
                                 </div>
                             </div>
 
@@ -101,8 +103,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 for ($i = 0; $i < count($episodelist); ++$i) { ?>
 
 
-                    <div class="col-md-4 col-sm-6 col-xs-6">
-                        <div class="itembox wow bounceIn" data-wow-duration="2s">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6" style="overflow: hidden; padding: 2px;">
+                        <div class="itembox wow zoomIn" data-wow-duration="2s">
                             <div class="inneritem">
                                 <img class="zoom_image" width="100%"
                                      src="<?php echo base_url(); ?>posters/<?php echo $episodelist[$i]->srposter ?>"
